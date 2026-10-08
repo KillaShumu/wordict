@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexlock - Place one letter. Force the word.</title>
+<meta name="description" content="Lexlock is a word puzzle for Android where you never type a word. Place one letter; when only one word can still fit, it locks itself. 300 levels, a daily puzzle, Blitz, Zen and duels. Works offline.">
+<meta name="theme-color" content="#FAF7F0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141414" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FAF7F0'/%3E%3Cpath d='M10 14v-4a6 6 0 0 1 12 0v4' fill='none' stroke='%23E8552B' stroke-width='2.6' stroke-linecap='round'/%3E%3Crect x='6' y='13' width='20' height='16' rx='4' fill='%231A1A1A'/%3E%3Cpath d='M12.5 17v8h7' fill='none' stroke='%23FAF7F0' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 14v-4a6 6 0 0 1 12 0v4" fill="none" stroke="var(--accent)" stroke-width="2.6" stroke-linecap="round"/><rect x="6" y="13" width="20" height="16" rx="4" fill="var(--ink)"/><path d="M12.5 17v8h7" fill="none" stroke="var(--bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Lexlock
+    </a>
+    <nav><a href="privacy.html">Privacy</a><a href="delete-data.html">Delete data</a></nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Place one letter.<br><em>Force the word.</em></h1>
+    <p class="lead">A word puzzle where you never type a word. Every slot shows how many words could still fit it. Leave exactly one, and the word locks itself.</p>
+
+    <div class="demo" aria-label="Demo: an empty four-letter slot. Q is placed in the second square and AQUA locks.">
+      <div class="tile"><span>A</span></div>
+      <div class="tile q"><span>Q</span></div>
+      <div class="tile"><span>U</span></div>
+      <div class="tile"><span>A</span></div>
+      <div class="pill" aria-hidden="true">
+        <span class="a">2.4k</span>
+        <span class="b">1</span>
+        <span class="c"><svg viewBox="0 0 12 12"><path d="M3.5 5V3.5a2.5 2.5 0 0 1 5 0V5" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="2" y="5" width="8" height="6" rx="1.5" fill="currentColor"/></svg></span>
+      </div>
+    </div>
+    <p class="note" style="margin-top:16px">An empty four-letter slot has 2,420 possible words. Put a Q in the second square and only one is left: AQUA. It locks, and you spent one move.</p>
+
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.vriea.lexlock">Get it on Google Play</a>
+    <p class="meta">Free. Android 7.0 and later. Works offline.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>Tap a square, then a letter. Any square, any letter.</li>
+      <li>Every slot shows a live count of the words that still fit. Crossing slots narrow each other.</li>
+      <li>When a count reaches 1, the word flips into place on its own. One lock can set off a chain across the grid.</li>
+      <li>A letter that leaves a slot with zero words is dead: it bounces back. Fewer placements is a better result.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Seven ways to play</h2>
+    <div class="grid">
+      <div class="card"><h3>Journey</h3><p>300 levels in 10 chapters. Grids grow, the letters you may use shrink, move caps tighten, and in the last chapters the counts go quiet.</p></div>
+      <div class="card"><h3>Daily</h3><p>One puzzle a day, the same for everyone. Keep your streak and share your result as a row of locks, with no spoilers.</p></div>
+      <div class="card"><h3>Blitz</h3><p>60 seconds, one slot at a time. Lock words fast, build combos, climb from four-letter words to seven.</p></div>
+      <div class="card"><h3>Zen</h3><p>Endless puzzles with no lives and no timer. Pick small, medium or large and settle in.</p></div>
+      <div class="card"><h3>Duel</h3><p>The same puzzle on two phones. Fewer moves wins.</p></div>
+      <div class="card"><h3>Standoff</h3><p>One shared board, alternating turns, 30 seconds a move. Locks score, dead letters cost.</p></div>
+      <div class="card"><h3>Pass &amp; Play</h3><p>Standoff on a single phone, handed back and forth. No connection needed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Fair play</h2>
+    <ul>
+      <li>Lives exist only in Journey: five a day, reset at midnight.</li>
+      <li>Out of lives? Wait, or choose to watch a short rewarded video for two more, at most three times a day.</li>
+      <li>Hints in Journey come from the same rewarded videos, are free on the first three levels, and are free in Zen, three per puzzle.</li>
+      <li>That is the only advertising in Lexlock. No banners, no pop-ups, no ads between puzzles. Every ad is one you tapped to watch.</li>
+      <li>No in-app purchases. Nothing is sold and nothing is paywalled.</li>
+    </ul>
+    <p class="note">The dictionary is 22,646 common English words of three to eight letters, built from the public-domain ENABLE list and filtered to everyday vocabulary.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="card accent">
+      <h2>Private by design</h2>
+      <ul>
+        <li><b>No account, no sign-in, no email address.</b> Your progress and settings are stored on your phone.</li>
+        <li><b>Anonymous online play.</b> Duel and Standoff use a random player id and a display name made from a fixed word list, such as "Brisk Fjord". There is no chat and no free text anywhere in the game. Room data expires two hours after a room is created.</li>
+        <li><b>Ads only when you ask.</b> Rewarded videos are served by Google AdMob and Lexlock requests non-personalised ads. Google receives your device's advertising ID when an ad is shown.</li>
+        <li><b>Not directed at children under 13.</b></li>
+      </ul>
+      <p style="margin:0"><a href="privacy.html">Read the privacy policy</a> &nbsp;&middot;&nbsp; <a href="delete-data.html">How to delete your data</a></p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="delete-data.html">Delete your data</a>
+      <a href="https://play.google.com/store/apps/details?id=com.vriea.lexlock">Google Play</a>
+      <a href="mailto:shumonaihaider@gmail.com">Contact</a>
+    </nav>
+    <div>Lexlock by Vriea. For Android 7.0 and later.</div>
+  </div>
+</footer>
+
+</body>
+</html>
